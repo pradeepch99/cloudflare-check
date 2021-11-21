@@ -33,7 +33,7 @@ def main():
     f = open(args.inputfile.name, "r")
     for i in f:
         i = i.rstrip()
-        if checkIP(i) == True:
+        if checkIP(i) != True:
             print(i)
     args.inputfile.close()
 
